@@ -1,0 +1,74 @@
+<HTML>
+<HEAD>
+<TITLE>FORMS</TITLE>
+
+<SCRIPT>
+function fetch()
+{
+var get = document.getElementById("get").value;
+document.getElementById("put").value=get;
+}
+</SCRIPT>
+
+</HEAD>
+
+<BODY BGCOLOR="CYAN">
+
+<H2>REGISTRATION FORM</H2>
+
+<FORM>
+Student name :
+<INPUT TYPE="TEXT"PLACEHOLDER="Enter student's name"><BR><BR>
+
+Class  :&nbsp;&nbsp;&nbsp <SELECT>
+<OPTION VALUE="1">1</OPTION>
+<OPTION VALUE="2">2</OPTION>
+<OPTION VALUE="3">3</OPTION>
+<OPTION VALUE="4">4</OPTION>
+<OPTION VALUE="5">5</OPTION>
+<OPTION VALUE="6">6</OPTION>
+<OPTION VALUE="7">7</OPTION>
+<OPTION VALUE="8">8</OPTION>
+</SELECT>&nbsp;&nbsp;&nbsp
+<SELECT>
+<OPTION VALUE="1">A</OPTION>
+<OPTION VALUE="2">B</OPTION>
+<OPTION VALUE="3">C</OPTION>
+<OPTION VALUE="4">D</OPTION>
+<OPTION VALUE="5">E</OPTION>
+</SELECT><BR><BR>
+
+Date of birth:
+<INPUT TYPE="DATE"><BR><BR>
+
+Parent contact number : <INPUT TYPE="NUMBER" PLACEHOLDER="Parent's number">
+<BR><BR>
+Parent email id :
+<INPUT TYPE="TEXT"PLACEHOLDER="Parent's email adress"><BR><BR>
+
+Gender :
+<INPUT TYPE="RADIO"NAME="GENDER">Male
+<INPUT TYPE="RADIO"NAME="GENDER">Female
+<INPUT TYPE="RADIO"NAME="GENDER">Other
+<BR><BR>
+
+Language the child knows:<BR>
+<INPUT TYPE="CHECKBOX"VALUE="English">English<BR>
+<INPUT TYPE="CHECKBOX"VALUE="Hindi">Hindi<BR>
+<INPUT TYPE="CHECKBOX"VALUE="Telugu">Telugu<BR>
+<INPUT TYPE="CHECKBOX"VALUE="tamil">Tamil<BR>
+<INPUT TYPE="CHECKBOX"VALUE="Bengali">Bengali<BR><BR>
+
+Childs favorite color : <INPUT TYPE="COLOR"><BR><BR>
+
+Child knowledge about histroy out of 10 :
+<INPUT TYPE="RANGE" MIN="0" MAX="10"ID="get"ONINPUT="fetch()"VALUE="0">
+<INPUT TYPE="TEXT" ID="put">
+
+<BR><BR>
+
+<button type="submit" value="Submit" onclick="alert('Thank you for your valuable time')">Submit</button>
+<INPUT TYPE="RESET">
+</FORM>
+</BODY>
+</HTML>

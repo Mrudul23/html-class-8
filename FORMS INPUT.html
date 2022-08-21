@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<HTML lang="en">
+
+<HEAD>
+
+<TITLE>FORMS INPUT</TITLE>
+
+<SCRIPT>
+function fetch(){
+var get = document.getElementById("get").value;
+document.getElementById("put").value=get;
+}
+</SCRIPT>
+
+<style>
+    body{
+    margin: 0;
+    padding: 0;
+}
+.animated-area{
+    width : 100%;
+    height : 100%;
+    background: linear-gradient(45deg,#ef4444,#faa31b,#fff000,#82c341,#009f75,#88c6ed,#394ba0,	#FFC0CB);
+    position:static 
+}
+</style>
+
+</HEAD>
+
+<BODY>
+
+    <div class="animated-area">
+<FORM>
+<FIELDSET>
+<LEGEND>Form input types</LEGEND>
+Textbox :&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<INPUT TYPE="TEXT" PLACEHOLDER="Enter text"><BR><BR>
+
+Date :&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<INPUT TYPE="DATE"><BR><BR>
+
+number :&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <INPUT TYPE="NUMBER" PLACEHOLDER="Enter number"><BR><BR>
+
+email :&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<INPUT TYPE="TEXT" PLACEHOLDER="Enter email adress"><BR><BR>
+
+Password :&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<INPUT TYPE="PASSWORD" PLACEHOLDER="Enter password"><BR><BR>
+
+Search :&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<INPUT TYPE="SEARCH" LIST="SEARCH" PLACEHOLDER="🔍 SEARCH HERE"><BR><BR>
+<DATALIST ID="SEARCH">
+<OPTION VALUE="Hello">
+<OPTION VALUE="Hi">
+<OPTION VALUE="Hola">
+<OPTION VALUE="Namaste">
+</DATALIST>
+
+Radio :&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<INPUT TYPE="RADIO" NAME="alpha">Option a
+<INPUT TYPE="RADIO" NAME="alpha">Option b
+<INPUT TYPE="RADIO" NAME="alpha">Option c
+<BR><BR>
+
+Checkbox:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<INPUT TYPE="CHECKBOX" VALUE="a">Option a
+<INPUT TYPE="CHECKBOX" VALUE="b">Option b
+<INPUT TYPE="CHECKBOX" VALUE="c">Option c<BR><BR>
+
+color :&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;<INPUT TYPE="COLOR"><BR><BR>
+
+Time:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<INPUT TYPE="TIME"><BR><BR>
+Week :&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<INPUT TYPE="WEEK"><BR><BR>
+Month and year: <INPUT TYPE="MONTH"><BR><BR>
+
+Url:&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<INPUT TYPE="URL" PLACEHOLDER="Enter URL"><BR><BR>
+
+File:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<INPUT TYPE="FILE"><BR><BR>
+
+Range :&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<INPUT TYPE="RANGE" MIN="0" MAX="10" ID="get" ONINPUT="fetch()" VALUE="0">
+<INPUT TYPE="TEXT" ID="put" PLACEHOLDER="Range"><BR><BR>
+
+Image : <BR><INPUT TYPE="IMAGE" src="https://cdn0.iconfinder.com/data/icons/set-app-incredibles/24/Image-01-512.png" WIDTH="95" ALT="IMAGE"><BR><BR>
+ 
+Paragraph:<BR> <TEXTAREA rows="3" cols="60"></TEXTAREA><BR>
+</FIELDSET>
+
+<FIELDSET>
+<LEGEND> Option and select tags</LEGEND>
+Dropdown:&nbsp;&nbsp;&nbsp;<SELECT>
+<OPTION VALUE="1">1</OPTION>
+<OPTION VALUE="2">2</OPTION>
+<OPTION VALUE="3">3</OPTION>
+<OPTION VALUE="4">4</OPTION>
+<OPTION VALUE="5">5</OPTION>
+<OPTION VALUE="6">6</OPTION>
+<OPTION VALUE="7">7</OPTION>
+<OPTION VALUE="8">8</OPTION>
+</SELECT>&nbsp;&nbsp;&nbsp;
+<SELECT>
+<OPTION VALUE="1">A</OPTION>
+<OPTION VALUE="2">B</OPTION>
+<OPTION VALUE="3">C</OPTION>
+<OPTION VALUE="4">D</OPTION>
+<OPTION VALUE="5">E</OPTION>
+</SELECT><BR>
+</FIELDSET>
+
+<FIELDSET>
+<LEGEND>Buttons</LEGEND>
+<INPUT type="submit" value="Submit Button" onclick="alert('Thank you for your valuable time')">
+<INPUT TYPE="RESET" VALUE="Reset data">
+</FIELDSET>
+</FORM>
+</div>
+</BODY>
+</HTML>
